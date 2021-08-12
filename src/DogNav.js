@@ -8,7 +8,7 @@ const DogNav = ({ names }) => {
       {names.map(name => {
         return (
           <div>
-            <NavLink exact to={`/dogs/${name}`}>
+            <NavLink exact to={`/dogs/${name.toLowerCase()}`}>
               {name}
             </NavLink>
           </div>
