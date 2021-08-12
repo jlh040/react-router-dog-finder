@@ -1,5 +1,10 @@
 import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
+import DogNav from './DogNav';
+import duke from './dogPictures/duke.jpg';
+import perry from './dogPictures/perry.jpg';
+import tubby from './dogPictures/tubby.jpg';
+import whiskey from './dogPictures/whiskey.jpg';
 
 function App({ dogs }) {
   const dogNames = dogs.map(dog => dog.name);
@@ -9,9 +14,9 @@ function App({ dogs }) {
         <Route exact to="/dogs">
           <DogNav names={dogNames} />
         </Route>
-        <Route exact to="/dogs/:name">
+        {/* <Route exact to="/dogs/:name">
           <DogDetail />
-        </Route>
+        </Route> */}
       </BrowserRouter>
     </div>
   );
