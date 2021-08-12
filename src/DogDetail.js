@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
+import './DogDetail.css';
 
 const DogDetail = ({ dogs }) => {
   const { name } = useParams();
@@ -14,7 +15,7 @@ const DogDetail = ({ dogs }) => {
           {dog.facts.map(fact => <li>{fact}</li>)}
         </ul>
       </h3>
-      <Link to="/dogs">Go Back</Link>
+      <Link to="/dogs">Go Home</Link>
     </div>
   )
 };
