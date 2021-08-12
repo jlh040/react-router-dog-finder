@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import DogNav from './DogNav';
 import DogDetail from './DogDetail';
 import duke from './dogPictures/duke.jpg';
@@ -12,12 +12,15 @@ function App({ dogs }) {
   return (
     <div className="App">
       <BrowserRouter>
-        <Route exact path="/dogs">
-          <DogNav names={dogNames} />
-        </Route>
-        <Route exact path="/dogs/:name">
-          <DogDetail dogs={dogs} />
-        </Route>
+        <Switch>
+          <Route exact path="/dogs">
+            <DogNav names={dogNames} />
+          </Route>
+          <Route exact path="/dogs/:name">
+            <DogDetail dogs={dogs} />
+          </Route>
+          <Redirect to ="/dogs" />
+        </Switch>
       </BrowserRouter>
     </div>
   );
