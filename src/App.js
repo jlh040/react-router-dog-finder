@@ -1,9 +1,17 @@
 import './App.css';
+import { BrowserRouter, Route } from 'react-router-dom';
 
 function App({ dogs }) {
   return (
     <div className="App">
-      
+      <BrowserRouter>
+        <Route exact to="/dogs">
+          <DogNav />
+        </Route>
+        <Route exact to="/dogs/:name">
+          <DogDetail />
+        </Route>
+      </BrowserRouter>
     </div>
   );
 };
