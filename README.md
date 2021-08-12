@@ -1,10 +1,14 @@
+# React Router Dog Finder
+
+This is a very simple app that I created with [React Router](https://reactrouter.com/). When users start the app they will see a list of dog names. They can then click on the dog names to view more information about a dog. Check out the **/src** folder to see the components and client-side routing that I implemented. Note that this is part 1 of Springboard exercise 41.2.8. Part 2 is [here](https://github.com/jlh040/react-router-color-factory).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+First, run `npm install` to download the dependencies. Then, in the project directory, you can run:
 
 ### `npm start`
 

@@ -8,7 +8,7 @@ const DogDetail = ({ dogs }) => {
   return (
     <div className="DogDetail">
       <h1>{dog.name}'s Page!</h1>
-      <img src={dog.src} />
+      <img src={dog.src} alt={`${dog.name}`} />
       <h3>Age: {dog.age}</h3>
       <h3>Facts:
         <ul style={{'list-style': 'none'}}>
